@@ -32,7 +32,7 @@ export default Ember.Component.extend({
     },
     cancel() {
       console.log('cancel action in component');
-      this.cancel();
+      this.cancel(this.get('model'));
     }
 
   }
